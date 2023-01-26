@@ -1,0 +1,7 @@
+version: '3'
+services:
+  robot:
+    image: marketsquare/robotframework-browser:latest
+    volumes: 
+      - ./robot:/robot
+    command: robot --outputdir /robot/out /robot
